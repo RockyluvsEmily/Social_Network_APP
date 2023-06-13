@@ -2,7 +2,7 @@ const { Thought, User } = require('../models');
 
 const thoughtController = {
 
-  getAllThoughts(req, res) {
+  getThoughts(req, res) {
     Thought.find()
 
       .then((dbThoughtData) => {
